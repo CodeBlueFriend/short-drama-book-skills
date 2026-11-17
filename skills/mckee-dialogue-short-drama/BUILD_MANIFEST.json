@@ -1,0 +1,31 @@
+{
+  "tool": "cangjie-tools v2.5.0",
+  "published_hashes": {
+    "SKILL.md": "c1bb0f4eff988df108d8184eb8c39df25adf821ad430edc0f2c000738d970fb3",
+    "references/capabilities/verbal-action.md": "80fdb3b6fdd46d0b62e7b30d9a6abc9e425639b82e66071009d25d87945f2c0c",
+    "references/capability-index.md": "565ffd13672260c328a1d0209ae3d3258d26c411f4a2ba5e33bf94838eb522d9",
+    "references/cheatsheet.md": "579401cb4c8dbb73bf78bb96490b3537e0767088a51035a5db50e764efc1c6f4",
+    "references/glossary.md": "8b329c2b455c73bee8ed2ea2e4e38c77b34bafc7c69d7b30647872ce0772a150",
+    "references/overview.md": "7272ad994fefa93f9436f51aa9a1bcb07816831f777f69afdb68629e9d22995c"
+  },
+  "note": "update/重编译前比对 published_hashes；检测到本地手改不得静默覆盖",
+  "bundle_id": "bundle.mckee-dialogue-short-drama",
+  "bundle_sha256": "90517dff4c6330313647dce01fc4b0dbd3a65be3004468f85f84eab0084a39f7",
+  "variant": "single",
+  "run_id": "run-20261117-230039-54001c",
+  "decision": {
+    "schema_version": 1,
+    "requested": "single",
+    "selected": "single",
+    "decision_policy": "single-first-v1",
+    "skill_budget": 8,
+    "promoted_count": 0,
+    "capability_count": 1,
+    "reasons": [
+      "用户显式选择 single，auto 决策器不覆盖用户选择"
+    ],
+    "alternative": "compact pack（1 个来源路由入口 + 0 个晋级 Skill，共 1 个可发现入口）",
+    "user_confirmed": true,
+    "preserve_strategy_on_update": true
+  }
+}

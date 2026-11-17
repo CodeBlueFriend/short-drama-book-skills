@@ -1,0 +1,37 @@
+schema_version: 1
+promotion_budget: 8
+bundle_id: bundle.mckee-dialogue-short-drama
+book:
+  title: 对白
+  source_pack: mckee-dialogue-short-drama
+entry:
+  name: mckee-dialogue-short-drama
+  description: 用麦基的言语行动方法诊断短剧对白、潜台词和人物意图。
+  core_principles:
+  - 仅调用公开资料试稿所列能力
+  - 将原书依据和短剧改编同时写进交付
+  - 标出需要作者补定的情节事实
+  out_of_scope:
+  - 逐章覆盖及未取得的书稿正文
+  stop_conditions:
+  - 输入不足时标注待定字段
+capabilities:
+- capability_id: cap.mckee-dialogue-short-drama.verbal-action
+  revision: 1
+  status: active
+  slug: verbal-action
+  title: 对白作为行动
+  importance: high
+  importance_rationale: 可在短剧写作中单独执行并核对输出。
+  intents:
+  - 润色对白、找潜台词、检查角色的言语行动
+  keywords:
+  - 对白作为行动
+  one_liner: 给主要台词标一个及物动词，例如稳住证人、试探同伴、逼经理交出钥匙
+  card: cards/verbal-action.md
+  also_read: []
+  promotion:
+    destination: router
+  source_evidence:
+  - source_id: src-verbal-action
+    location: 第 1 章《对白的完全定义》见中文版目录，原则核对作者官网

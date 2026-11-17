@@ -1,0 +1,58 @@
+schema_version: 1
+promotion_budget: 8
+bundle_id: bundle.save-the-cat-short-drama
+book:
+  title: 救猫咪：电影编剧指南
+  source_pack: save-the-cat-short-drama
+entry:
+  name: save-the-cat-short-drama
+  description: 用《救猫咪》改短剧一句话梗概或搭建全篇节拍表。
+  core_principles:
+  - 仅调用公开资料试稿所列能力
+  - 将原书依据和短剧改编同时写进交付
+  - 标出需要作者补定的情节事实
+  out_of_scope:
+  - 逐章覆盖及未取得的书稿正文
+  stop_conditions:
+  - 输入不足时标注待定字段
+capabilities:
+- capability_id: cap.save-the-cat-short-drama.logline
+  revision: 1
+  status: active
+  slug: logline
+  title: 一句话梗概
+  importance: high
+  importance_rationale: 可在短剧写作中单独执行并核对输出。
+  intents:
+  - 提炼一句话梗概、logline、立项卖点
+  keywords:
+  - 一句话梗概
+  one_liner: 让陌生读者从一句话看见主角要做什么，以及哪种特殊处境会让这件事有戏
+  card: cards/logline.md
+  also_read:
+  - beat-sheet
+  promotion:
+    destination: router
+  source_evidence:
+  - source_id: src-logline
+    location: 第 1 章《它讲的是什么？》，中文版公开试读
+- capability_id: cap.save-the-cat-short-drama.beat-sheet
+  revision: 1
+  status: active
+  slug: beat-sheet
+  title: 全篇节拍表
+  importance: high
+  importance_rationale: 可在短剧写作中单独执行并核对输出。
+  intents:
+  - 设计十五节拍、检查中点或结尾
+  keywords:
+  - 全篇节拍表
+  one_liner: 先看每个事件在主角变化中起什么作用，再决定它在哪一集落地
+  card: cards/beat-sheet.md
+  also_read:
+  - logline
+  promotion:
+    destination: router
+  source_evidence:
+  - source_id: src-beat-sheet
+    location: 第 4 章《来构建节拍吧！》，章名查馆藏，方法核对官方节拍表和说明

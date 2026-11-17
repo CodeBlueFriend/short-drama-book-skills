@@ -1,0 +1,31 @@
+{
+  "tool": "cangjie-tools v2.5.0",
+  "published_hashes": {
+    "SKILL.md": "d6e14218f26136655c9ee18ee30acb896af33409b1ad338aad9ef166826b8510",
+    "references/capabilities/payoff-turns.md": "7b43697e3ac9bed14aada5c81819b517cc332ee336de5adfffece67b61cbaece",
+    "references/capability-index.md": "45dbb3a45e4ef6c9a4df6df5078248306f7be42f44ef6041407d17b34edb4c2f",
+    "references/cheatsheet.md": "dcfa79dff29ab94249f5759f07a6c381cc3c8a93ac8510586e7d33413b968a57",
+    "references/glossary.md": "87450aaead8d9e9dddba38114dbae225e988eff4d8a13d2a51fa4457aecf9282",
+    "references/overview.md": "64ea5d758146e51f31b89bc963f02969358690df4cc2bf78d6f0a37a34839568"
+  },
+  "note": "update/重编译前比对 published_hashes；检测到本地手改不得静默覆盖",
+  "bundle_id": "bundle.short-drama-basics",
+  "bundle_sha256": "3cfcaf6aa0676e552845c3ab9009d0a96d2633ea4689fec7fd56ef9c6fe7f16b",
+  "variant": "single",
+  "run_id": "run-20261117-230038-e56a71",
+  "decision": {
+    "schema_version": 1,
+    "requested": "single",
+    "selected": "single",
+    "decision_policy": "single-first-v1",
+    "skill_budget": 8,
+    "promoted_count": 0,
+    "capability_count": 1,
+    "reasons": [
+      "用户显式选择 single，auto 决策器不覆盖用户选择"
+    ],
+    "alternative": "compact pack（1 个来源路由入口 + 0 个晋级 Skill，共 1 个可发现入口）",
+    "user_confirmed": true,
+    "preserve_strategy_on_update": true
+  }
+}

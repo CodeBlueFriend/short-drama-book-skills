@@ -1,0 +1,38 @@
+schema_version: 1
+promotion_budget: 8
+bundle_id: bundle.short-drama-basics
+book:
+  title: 从零开始学短剧创作
+  source_pack: short-drama-basics
+entry:
+  name: short-drama-basics
+  description: 用《从零开始学短剧创作》的公开目录主题，检查短剧主线、分集转折和付费点。
+  core_principles:
+  - 仅调用公开资料试稿所列能力
+  - 将原书依据和短剧改编同时写进交付
+  - 标出需要作者补定的情节事实
+  out_of_scope:
+  - 逐章覆盖及未取得的书稿正文
+  stop_conditions:
+  - 输入不足时标注待定字段
+capabilities:
+- capability_id: cap.short-drama-basics.payoff-turns
+  revision: 1
+  status: active
+  slug: payoff-turns
+  title: 主线与付费点检查
+  importance: high
+  importance_rationale: 可在短剧写作中单独执行并核对输出。
+  intents:
+  - 检查付费点、卡点和开篇主线
+  keywords:
+  - 主线
+  - 付费点检查
+  one_liner: 付费点落在主线条件发生变化的一刻
+  card: cards/payoff-turns.md
+  also_read: []
+  promotion:
+    destination: router
+  source_evidence:
+  - source_id: src-payoff-turns
+    location: 第七章和第九章，出版社公开目录

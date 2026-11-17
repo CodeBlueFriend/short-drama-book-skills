@@ -1,0 +1,38 @@
+schema_version: 1
+promotion_budget: 8
+bundle_id: bundle.tv-showrunner-roadmap
+book:
+  title: 编剧路线图：热播电视剧的21条编剧法则
+  source_pack: tv-showrunner-roadmap
+entry:
+  name: tv-showrunner-roadmap
+  description: 用《编剧路线图》的公开预览检查试播集的人物秘密与后续剧情。
+  core_principles:
+  - 仅调用公开资料试稿所列能力
+  - 将原书依据和短剧改编同时写进交付
+  - 标出需要作者补定的情节事实
+  out_of_scope:
+  - 逐章覆盖及未取得的书稿正文
+  stop_conditions:
+  - 输入不足时标注待定字段
+capabilities:
+- capability_id: cap.tv-showrunner-roadmap.character-mystery
+  revision: 1
+  status: active
+  slug: character-mystery
+  title: 人物秘密与分集揭露
+  importance: high
+  importance_rationale: 可在短剧写作中单独执行并核对输出。
+  intents:
+  - 诊断人物秘密、试播集谜团和揭露节奏
+  keywords:
+  - 人物秘密
+  - 分集揭露
+  one_liner: 人物秘密会让眼前的正常行为出现解释不了的细节
+  card: cards/character-mystery.md
+  also_read: []
+  promotion:
+    destination: router
+  source_evidence:
+  - source_id: src-character-mystery
+    location: 英文初版第 12 章 Mine the Mystery，O’Reilly 公开开头
