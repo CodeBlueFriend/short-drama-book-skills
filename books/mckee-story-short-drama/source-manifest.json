@@ -1,9 +1,140 @@
 {
-  "source_id": "src-story-part3",
-  "url": "https://www.rwwny.org/wp-content/uploads/2016/07/robert-mckee-story-part3.pdf",
-  "sha256": "0973873cb51e7667b72771f080ea08f4b3885e9ccc5995bc683a5ecb07e9ea69",
-  "pages": 183,
-  "coverage": "English Part 3, chapters 7\u201313",
-  "retrieved_date": "2026-11-18",
-  "distributed_source_text": false
+  "source_id": "src-story-zh-tj2014",
+  "title": "故事：材质、结构、风格和银幕剧作的原理",
+  "author": "罗伯特·麦基",
+  "translator": "周铁东",
+  "publisher": "天津人民出版社",
+  "edition": "2014年9月第1版、第1次印刷",
+  "isbn": "9787201088334",
+  "CIP": "(2014)第191652号",
+  "source_url": "https://github.com/pipivv/gushi-skill/blob/8b68e5d0474f0a1dee55855ccb471eb35462bda1/故事-麦基.epub",
+  "source_repo_commit": "8b68e5d0474f0a1dee55855ccb471eb35462bda1",
+  "sha256": "8bf058b9180a4b945bb2f5fc8505a1304367ff551b191241d7ccf68553500f60",
+  "version_id": "tj-2014-09-8bf058b9180a",
+  "accessed_date": "2026-11-18",
+  "source_kind": "third-party EPUB with matching CIP and copyright page",
+  "source_quality": [
+    "原文件含第三方推广文字",
+    "第四部分罗马数字标为PARTⅥ，按篇名辨认",
+    "个别错字及电影历史细节待纸本或影片核查"
+  ],
+  "coverage": "19章逐段索引扫描；入选方法相关段落回读；长案例按需阅读",
+  "locator_spec": "P指同一XHTML内非空p/h1/h2/h3/h4元素按文档顺序编号，B指无嵌套blockquote的非空叶子blockquote按文档顺序编号。保留推广段以维持位置。EPUB重排本无可靠纸本页码，定位使用章名、小节、XHTML文件、P/B段号。",
+  "source_text_included": false,
+  "chapter_index": [
+    {
+      "title": "CHAPTER 01 故事问题",
+      "heading_file": "index_split_006.html",
+      "body_file": "index_split_007.html",
+      "body_sha256": "fd67d5789ce63b8247195cfd693b5d2ffae404996d685cd864b941fc4a6f4378"
+    },
+    {
+      "title": "CHAPTER 02 结构图谱",
+      "heading_file": "index_split_009.html",
+      "body_file": "index_split_010.html",
+      "body_sha256": "704b7db2eaee310f9ef16ae3d96b3aa39eedf0bd25ec2f0673082a04885c1756"
+    },
+    {
+      "title": "CHAPTER 03 结构与背景",
+      "heading_file": "index_split_011.html",
+      "body_file": "index_split_012.html",
+      "body_sha256": "5829d4c3fa421e99cb368c3238edba3d6c675db0de1fa5bf135d17d8eeafc78a"
+    },
+    {
+      "title": "CHAPTER 04 结构与类型",
+      "heading_file": "index_split_013.html",
+      "body_file": "index_split_014.html",
+      "body_sha256": "fa697fdc64fc56f3e1b2f3219750358616bf863f03ebac2690fe4e82652841f6"
+    },
+    {
+      "title": "CHAPTER 05 结构与人物",
+      "heading_file": "index_split_015.html",
+      "body_file": "index_split_016.html",
+      "body_sha256": "35f144c65ae710db82de0ea089792e6d8ec078ec24d97df4e07d05ed42285665"
+    },
+    {
+      "title": "CHAPTER 06 结构与意义",
+      "heading_file": "index_split_017.html",
+      "body_file": "index_split_018.html",
+      "body_sha256": "e525ac9476a87f6b6b97a6904783b625b137040e6639cecaa8a9979f44177ab1"
+    },
+    {
+      "title": "CHAPTER 07 故事材质",
+      "heading_file": "index_split_020.html",
+      "body_file": "index_split_021.html",
+      "body_sha256": "6bc4b9d8b869b2f7430ad864977694954f4aae5a970b30d2fe6f4abc6d99379f"
+    },
+    {
+      "title": "CHAPTER 08 激励事件",
+      "heading_file": "index_split_022.html",
+      "body_file": "index_split_023.html",
+      "body_sha256": "daee3f4c3d09f7cb9abb9eb46fcaadc916373fbf4a7fb732746002a621ea14f1"
+    },
+    {
+      "title": "CHAPTER 09 幕设计",
+      "heading_file": "index_split_024.html",
+      "body_file": "index_split_025.html",
+      "body_sha256": "284edc56a691ed040866735408a37ff58756427d43c1969f62b7c987c437fc66"
+    },
+    {
+      "title": "CHAPTER 10 场景设计",
+      "heading_file": "index_split_026.html",
+      "body_file": "index_split_027.html",
+      "body_sha256": "9b4507cf765c24668993a46e6b119799d01501ccc86d91d8100ea3d7e942deee"
+    },
+    {
+      "title": "CHAPTER 11 场景分析",
+      "heading_file": "index_split_028.html",
+      "body_file": "index_split_029.html",
+      "body_sha256": "0c39e56490d7e6aa66598aedfb48e81d5b62068f6e2708b83cff768c84e351c7"
+    },
+    {
+      "title": "CHAPTER 12 布局谋篇",
+      "heading_file": "index_split_030.html",
+      "body_file": "index_split_031.html",
+      "body_sha256": "0a24f0a9034a1f4e53ce8f30b91fe0f33cc45c5eb5f2ad15fda80f7156cc82ae"
+    },
+    {
+      "title": "CHAPTER 13 危机、高潮和结局",
+      "heading_file": "index_split_032.html",
+      "body_file": "index_split_033.html",
+      "body_sha256": "0d5b94453bedb53a62ba5ce60e647a51cbb058eda1833b5b419ea5099c1c5b98"
+    },
+    {
+      "title": "CHAPTER 14 反面人物塑造原理",
+      "heading_file": "index_split_035.html",
+      "body_file": "index_split_036.html",
+      "body_sha256": "a80071686f2901aa753a728218f463d7752d9986ea677392cb2eea1500b213d3"
+    },
+    {
+      "title": "CHAPTER 15 解说",
+      "heading_file": "index_split_037.html",
+      "body_file": "index_split_038.html",
+      "body_sha256": "d452ea2095fa2f87f72ca1228103680a25ffda804f3d84afd3c26be26fd099dd"
+    },
+    {
+      "title": "CHAPTER 16 问题和解决方法",
+      "heading_file": "index_split_039.html",
+      "body_file": "index_split_040.html",
+      "body_sha256": "016e2c42f56afdee93051404f3aaa30061ea1fe2223eb9d6265763fe52400cab"
+    },
+    {
+      "title": "CHAPTER 17 人物",
+      "heading_file": "index_split_041.html",
+      "body_file": "index_split_042.html",
+      "body_sha256": "5bbcb4d40cd73deeec93fff7fccd9a01d0631c08defc5be3b1e26001dc730860"
+    },
+    {
+      "title": "CHAPTER 18 文本",
+      "heading_file": "index_split_043.html",
+      "body_file": "index_split_044.html",
+      "body_sha256": "e23562a9c7cfc4fc96c51999f226d1a8c4baba8a6f4a57c3dbb232087188baf2"
+    },
+    {
+      "title": "CHAPTER 19 作家的创造方法",
+      "heading_file": "index_split_045.html",
+      "body_file": "index_split_046.html",
+      "body_sha256": "c6aa52cf1fd995ec398fadca7721e623b9dc5592e7d84173d93ba214e5d0c3de"
+    }
+  ]
 }

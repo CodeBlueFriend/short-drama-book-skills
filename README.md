@@ -1,16 +1,32 @@
-# 短剧编剧书籍技能
+# 短剧写作书籍技能与知识库交接
 
-四个 Codex skill 试稿，依据公开试读、作者资料或出版社目录制作。覆盖范围见下表。能力卡里的执行步骤和案例用于短剧创作，来源段记录核对到的章节或公开资料。
+五个独立 Codex skill，面向短剧剧本创作。每个入口包含可按任务检索的能力卡，统一导入目录共24份知识稿。用户可将本仓库地址交给现有写作项目更新知识库。
 
-| Skill | 可调用能力 | 公开资料范围 |
+| 书籍 | Skill | 当前来源和覆盖 |
 | --- | --- | --- |
-| [从零开始学短剧创作](skills/short-drama-basics/SKILL.md) | 主线与付费点检查 | 北大出版社目录第 7、9 章。操作步骤为原创改编 |
-| [编剧路线图](skills/tv-showrunner-roadmap/SKILL.md) | 人物秘密与分集揭露 | Routledge 英文初版第 12 章开头。中文版对应正文待核 |
-| [救猫咪](skills/save-the-cat-short-drama/SKILL.md) | 一句话梗概、全篇节拍表 | 孟影译本第 1 章试读，第 4 章节拍方法核对官方资料 |
-| [对白](skills/mckee-dialogue-short-drama/SKILL.md) | 对白作为行动 | 中文版第 1 章目录定位，方法核对作者官网 |
+| 从零开始学短剧创作 | [主线与卡点](skills/short-drama-basics/SKILL.md) | 1张卡，依据出版社第7、9章目录，操作步骤为短剧适配，正文待核 |
+| 编剧路线图 | [人物秘密](skills/tv-showrunner-roadmap/SKILL.md) | 1张卡，依据英文初版第12章公开开头，中文正文待核 |
+| 救猫咪 | [梗概与节拍](skills/save-the-cat-short-drama/SKILL.md) | 2张卡，依据孟影译本第1章试读及官方节拍资料 |
+| 对白 | [言语行动](skills/mckee-dialogue-short-drama/SKILL.md) | 1张卡，依据麦基官网原则，中文目录定位第1章，正文待核 |
+| 故事 | [中文版19项写作任务](skills/mckee-story-short-drama/SKILL.md) | 周铁东译，天津人民出版社2014年9月第1版，ISBN 9787201088334，中文EPUB正文已取得，19章扫描与方法段回读 |
 
-每个 skill 可独立使用。把所需的整个目录复制到 Codex 能发现的技能目录，再按目录名调用。例如「用 `$mckee-dialogue-short-drama` 检查这一场戏的潜台词，保留已确定的剧情事实」。
+《故事》的第三方EPUB版本通过CIP和版权页核对，含推广字样和少量可疑错字。19张卡使用中文章节、小节、文件和电子段号定位，纸本页码及逐字校勘待核。图像仅做相关关键图核验。前四本继续保留各自公开材料范围，后续可据整书正文补充。
 
-后续合并时，用各书 `books/<目录>/.cangjie/capabilities/` 中的能力卡和稳定 ID 对照现有写作流程。修改能力卡源文件后用仓颉的 `cangjie.py compile --output single` 重新生成对应 skill。整书正文核对及完整覆盖待完成。
+## 给写作项目的更新指令
 
-[试写记录](examples.md)
+> 从本仓库 knowledge-inbox 导入24份知识稿，按现有 mm-write-short-drama 知识库流程先创建 draft。保留中文章节、小节、文件段号、书目与仓颉能力ID，先核对与原库的重复、冲突和适用范围，再激活确认可用的规则。若已有旧版《故事》六张卡，按相同仓颉能力ID建立修订映射，归档或停用旧卡后替换。 即使规则正文哈希相同，也须更新该卡的来源版本和电子定位。新增规则的正文哈希会变化，需同时核对能力ID。导入后运行知识库校验并逐阶段验证检索。
+
+更新的输入位于 [knowledge-inbox](knowledge-inbox)。独立调用时，将 [skills](skills) 下所需的完整目录放入个人技能目录，下一条消息按目录名调用。
+
+## 交接与审计
+
+- [五本统一导入稿](knowledge-inbox)
+- [前四本交接说明](handoff/README.md)
+- [《故事》中文版交接说明](story-handoff/README.md)
+- [《故事》版本及源哈希](books/mckee-story-short-drama/source-manifest.json)
+- [《故事》覆盖审核](books/mckee-story-short-drama/coverage-audit.md)
+- [《故事》独立执行测试](books/mckee-story-short-drama/test-results.md)
+- [前四本共用试写](examples.md)
+- [发布说明](RELEASE_NOTES.md)
+
+源能力卡和编译数据位于 books/<书籍目录>/.cangjie/capabilities。使用仓颉的 cangjie.py compile --output single 重新编译。能力语义保持时沿用稳定ID并递增修订，行为拆分或合并时另做映射。

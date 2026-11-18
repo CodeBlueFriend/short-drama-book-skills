@@ -1,0 +1,151 @@
+{
+  "total": 24,
+  "found_in_top3": 24,
+  "context": "临时空库导入全部24稿为active，仅验证结构和可检索性，实际项目启用仍需语义复核。",
+  "results": [
+    {
+      "input": "first-four-01-short-drama-payoff-turn.md",
+      "query": "让相邻卡点改变不同的主线条件",
+      "stage": "episode",
+      "found_in_top3": true
+    },
+    {
+      "input": "first-four-02-showrunner-character-mystery.md",
+      "query": "让人物秘密的揭露改变下一步行动",
+      "stage": "structure",
+      "found_in_top3": true
+    },
+    {
+      "input": "first-four-03-save-the-cat-logline.md",
+      "query": "用一句可复述的梗概验收故事前提",
+      "stage": "planning",
+      "found_in_top3": true
+    },
+    {
+      "input": "first-four-04-save-the-cat-beat-sheet.md",
+      "query": "按情节功能检查整季节拍",
+      "stage": "structure",
+      "found_in_top3": true
+    },
+    {
+      "input": "first-four-05-mckee-verbal-action.md",
+      "query": "按言语行动诊断对白",
+      "stage": "scene",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-01-expectation-gap.md",
+      "query": "用预期与结果的鸿沟推动下一步",
+      "stage": "scene",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-02-inciting-incident.md",
+      "query": "让激励事件连接主角的追求",
+      "stage": "planning",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-03-progressive-complications.md",
+      "query": "用进展纠葛推进连续剧情",
+      "stage": "structure",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-04-scene-analysis.md",
+      "query": "按五步分析场景转折",
+      "stage": "scene",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-05-crisis-choice.md",
+      "query": "让结尾的危机形成真正两难",
+      "stage": "structure",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-06-climax-payoff.md",
+      "query": "用高潮行动兑现结尾变化",
+      "stage": "structure",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-07-story-form.md",
+      "query": "选择全剧结构并对齐结局承诺",
+      "stage": "planning",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-08-setting-research.md",
+      "query": "用背景约束筛查情节可能性",
+      "stage": "planning",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-09-genre-contract.md",
+      "query": "按类型常规设计观众期待",
+      "stage": "planning",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-10-character-pressure.md",
+      "query": "用压力下的选择建立人物性格",
+      "stage": "planning",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-11-controlling-idea.md",
+      "query": "从结局回查主控思想",
+      "stage": "planning",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-12-setup-payoff.md",
+      "query": "让分晓能回溯到充分伏笔",
+      "stage": "structure",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-13-composition-rhythm.md",
+      "query": "按紧张与释放重排分集节奏",
+      "stage": "structure",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-14-antagonism-depth.md",
+      "query": "让对抗触及核心价值的深层威胁",
+      "stage": "planning",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-15-dramatized-exposition.md",
+      "query": "把解说放进眼前行动和冲突",
+      "stage": "scene",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-16-audience-information.md",
+      "query": "用知情差选择神秘、悬念或戏剧反讽",
+      "stage": "structure",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-17-screen-action.md",
+      "query": "把抽象心理改成可见可听的动作",
+      "stage": "scene",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-18-inside-out-workflow.md",
+      "query": "先验证事件再扩成场次与对白",
+      "stage": "planning",
+      "found_in_top3": true
+    },
+    {
+      "input": "story-19-adaptation-recreation.md",
+      "query": "把原作事件重建为可拍的改编大纲",
+      "stage": "adaptation",
+      "found_in_top3": true
+    }
+  ]
+}

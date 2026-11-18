@@ -1,0 +1,32 @@
+{
+  "tool": "cangjie-tools v2.5.0",
+  "published_hashes": {
+    "SKILL.md": "6878553a232c9d99d8097fb56f3ab214a0d7cdeb0d8c704496029d302d1c3f3b",
+    "references/capabilities/beat-sheet.md": "8b9d172776d5a3ad56b5f1cfdb4366b81eb05673dc2cda8ec236b143080ca8ee",
+    "references/capabilities/logline.md": "825fd8b0c41b7052c920f0f56dbbd7a6b879ee9ca676978cc23207cacf0b4259",
+    "references/capability-index.md": "f6998bf7468165737aee61eae8111beb5ec906218da288517a3c13dbf2f129d4",
+    "references/cheatsheet.md": "fbca5935618d7d282cb7c815115b487c281238316295c40ef78532fcb3590581",
+    "references/glossary.md": "e59cedd63036a5c0e0ea76fe0093bc70e3aa5b9943fff1f1c48bf9928535f377",
+    "references/overview.md": "48013a47dbeb78cf2939b31e9333fc17a6c70e772005288245fd3b459cae98cb"
+  },
+  "note": "update/重编译前比对 published_hashes；检测到本地手改不得静默覆盖",
+  "bundle_id": "bundle.save-the-cat-short-drama",
+  "bundle_sha256": "6eb32ea35b5dfe8095abe94e96a9deff1d6fa62a4221ed3dfc74545930ec7a34",
+  "variant": "single",
+  "run_id": "run-20261117-230039-3b450b",
+  "decision": {
+    "schema_version": 1,
+    "requested": "single",
+    "selected": "single",
+    "decision_policy": "single-first-v1",
+    "skill_budget": 8,
+    "promoted_count": 0,
+    "capability_count": 2,
+    "reasons": [
+      "用户显式选择 single，auto 决策器不覆盖用户选择"
+    ],
+    "alternative": "compact pack（1 个来源路由入口 + 0 个晋级 Skill，共 1 个可发现入口）",
+    "user_confirmed": true,
+    "preserve_strategy_on_update": true
+  }
+}

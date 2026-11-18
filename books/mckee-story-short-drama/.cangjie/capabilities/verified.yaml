@@ -2,137 +2,606 @@ schema_version: 1
 promotion_budget: 8
 bundle_id: bundle.mckee-story-short-drama
 book:
-  title: 故事
+  title: 故事：材质、结构、风格和银幕剧作的原理
+  author: 罗伯特·麦基；周铁东译
   source_pack: mckee-story-short-drama
+  baseline_tag: tj2014-zh-v0.2
 entry:
   name: mckee-story-short-drama
-  description: 用罗伯特·麦基《故事》的英文方法段落设计或检查短剧的激励事件、行动鸿沟、递进纠葛、场景节拍、危机选择与高潮铺垫。
+  description: 依据天津人民出版社2014年、周铁东译《故事》的中文方法段落，指导短剧策划、人物、结构、分集、场景、对白及改编，检查行动因果、信息分配和结尾回收。用于用户要求采用麦基原理或排查具体剧本问题时。
   core_principles:
-  - 用具体行动和后果核验因果
-  - 保留原书章节和英文页码
-  - 把项目锁定事实带入改写检查
+  - 先读取当前阶段的项目事实，再按任务查卡
+  - 用人物欲望、行动、对抗与后果核验改写
+  - 保留中文章节、小节和电子段号
+  - 结合项目条件使用原书的形式与比例建议
   out_of_scope:
-  - 未核对章节的全书解读
+  - 纯书目查询
+  - 独立的医疗或司法专业判断
+  - 与原书无关的软件任务
   stop_conditions:
-  - 必要剧情事实缺失时列待定字段
+  - 必要情节事实或原作素材缺失时列出缺口
+  - 相互矛盾的锁定事实影响改写时先标注冲突
+router_entry:
+  name: mckee-story-short-drama
+  description: 依据天津人民出版社2014年、周铁东译《故事》的中文方法段落，指导短剧策划、人物、结构、分集、场景、对白及改编，检查行动因果、信息分配和结尾回收。用于用户要求采用麦基原理或排查具体剧本问题时。
 capabilities:
 - capability_id: cap.mckee-story-short-drama.expectation-gap
-  revision: 1
+  revision: 2
   status: active
   slug: expectation-gap
   title: 用预期与结果的鸿沟推动下一步
   importance: high
-  importance_rationale: 覆盖短剧行动因果、开场、递进、场景诊断和结尾的具体任务。
+  importance_rationale: 短剧场景任务需要可执行步骤，源方法段与交付契约已逐项核对。
   intents:
   - 用预期与结果的鸿沟推动下一步
   keywords:
   - expectation-gap
   - 场景
-  one_liner: 人物依其认知行动，现实的反应偏离预期，迫使他再选择。
+  - 第一步；鸿沟；关于风险；进展过程中的鸿沟
+  one_liner: 修改一场行动戏时，分别写出主角的目标、他预期的反应和实际结果，再由结果确定下一步行动。实际结果与预期相同时，检查这场戏是否还承担了必要的关系变化。
   card: cards/expectation-gap.md
-  also_read: []
+  also_read:
+  - progressive-complications
+  - scene-analysis
+  frontmatter:
+    description: 用户要用预期与结果的鸿沟推动下一步，或在场景阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 场景
+    - 短剧
+    - 麦基
   promotion:
     destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
   source_evidence:
-  - source_id: src-story-part3
-    location: 第 7 章 The Substance of Story，英文印刷页 147—149，PDF 第 16—18 页
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第7章《故事材质》／第一步；鸿沟；关于风险；进展过程中的鸿沟，index_split_021.html P0044—P0050、P0059—P0081
 - capability_id: cap.mckee-story-short-drama.inciting-incident
-  revision: 1
+  revision: 2
   status: active
   slug: inciting-incident
   title: 让激励事件连接主角的追求
   importance: high
-  importance_rationale: 覆盖短剧行动因果、开场、递进、场景诊断和结尾的具体任务。
+  importance_rationale: 短剧开场任务需要可执行步骤，源方法段与交付契约已逐项核对。
   intents:
   - 让激励事件连接主角的追求
   keywords:
   - inciting-incident
   - 开场
-  one_liner: 激励事件打破主角生活的平衡，引起回应和欲望对象。
+  - 激励事件；故事脊椎；激励事件的质量
+  one_liner: 检查开篇时，写明事件改变主角的什么处境、主角何时得知，以及他因此想得到什么。需要先铺设再被主角发现的事件，要让这两步在因果上接通。
   card: cards/inciting-incident.md
-  also_read: []
+  also_read:
+  - climax-payoff
+  frontmatter:
+    description: 用户要让激励事件连接主角的追求，或在开场阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 开场
+    - 短剧
+    - 麦基
   promotion:
     destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
   source_evidence:
-  - source_id: src-story-part3
-    location: 第 8 章 The Inciting Incident，英文印刷页 189—192，PDF 第 58—61 页
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第8章《激励事件》／激励事件；故事脊椎；激励事件的质量，index_split_023.html P0044—P0057、P0064—P0098、P0114—P0124
 - capability_id: cap.mckee-story-short-drama.progressive-complications
-  revision: 1
+  revision: 2
   status: active
   slug: progressive-complications
-  title: 用不可退回的后果推进纠葛
+  title: 用进展纠葛推进连续剧情
   importance: high
-  importance_rationale: 覆盖短剧行动因果、开场、递进、场景诊断和结尾的具体任务。
+  importance_rationale: 短剧结构任务需要可执行步骤，源方法段与交付契约已逐项核对。
   intents:
-  - 用不可退回的后果推进纠葛
+  - 用进展纠葛推进连续剧情
   keywords:
   - progressive-complications
   - 结构
-  one_liner: 递进纠葛让旧办法失效，并推动人物承担更大的风险。
+  - 进展纠葛；不归点
+  one_liner: 审查连续事件时，为每次失败记录它取消了哪种旧办法、人物下一步必须承担什么新代价。若人物仍可原样重试，检查本次事件是否真正推进了纠葛。
   card: cards/progressive-complications.md
-  also_read: []
+  also_read:
+  - antagonism-depth
+  frontmatter:
+    description: 用户要用进展纠葛推进连续剧情，或在结构阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 结构
+    - 短剧
+    - 麦基
   promotion:
     destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
   source_evidence:
-  - source_id: src-story-part3
-    location: 第 9 章 Act Design，英文印刷页 208—210，PDF 第 77—79 页
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第9章《幕设计》／进展纠葛；不归点，index_split_025.html P0001—P0013
 - capability_id: cap.mckee-story-short-drama.scene-analysis
-  revision: 1
+  revision: 2
   status: active
   slug: scene-analysis
   title: 按五步分析场景转折
   importance: high
-  importance_rationale: 覆盖短剧行动因果、开场、递进、场景诊断和结尾的具体任务。
+  importance_rationale: 短剧场景任务需要可执行步骤，源方法段与交付契约已逐项核对。
   intents:
   - 按五步分析场景转折
   keywords:
   - scene-analysis
   - 场景
-  one_liner: 场景分析依次核对冲突、开场价值、行动反应节拍、结尾价值及转折点。
+  - 场景分析技巧
+  one_liner: 按冲突、开场价值状态、行动反应节拍、结尾价值状态、转折点的顺序分析一场戏。用具体动作或事实证明变化，最后定位使结果改变的那个节拍。
   card: cards/scene-analysis.md
-  also_read: []
+  also_read:
+  - expectation-gap
+  - setup-payoff
+  frontmatter:
+    description: 用户要按五步分析场景转折，或在场景阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 场景
+    - 短剧
+    - 麦基
   promotion:
     destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
   source_evidence:
-  - source_id: src-story-part3
-    location: 第 11 章 Scene Analysis，英文印刷页 257—259，PDF 第 126—128 页
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第11章《场景分析》／场景分析技巧，index_split_029.html P0029—P0045；目标与主线关系另见 index_split_027.html
+      P0003—P0004
 - capability_id: cap.mckee-story-short-drama.crisis-choice
-  revision: 1
+  revision: 2
   status: active
   slug: crisis-choice
   title: 让结尾的危机形成真正两难
   importance: high
-  importance_rationale: 覆盖短剧行动因果、开场、递进、场景诊断和结尾的具体任务。
+  importance_rationale: 短剧人物任务需要可执行步骤，源方法段与交付契约已逐项核对。
   intents:
   - 让结尾的危机形成真正两难
   keywords:
   - crisis-choice
   - 人物
-  one_liner: 危机是终极决定，迫使人物面对不能兼得的价值或两种代价。
+  - 危机
+  one_liner: 设计终局决定时，把角色实际可选的两条路及各自代价写出来。若存在一条符合既定条件、能轻易保全两边的路，先处理这条路，再让人物作决定。
   card: cards/crisis-choice.md
-  also_read: []
+  also_read:
+  - character-pressure
+  - climax-payoff
+  frontmatter:
+    description: 用户要让结尾的危机形成真正两难，或在人物阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 人物
+    - 短剧
+    - 麦基
   promotion:
     destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
   source_evidence:
-  - source_id: src-story-part3
-    location: 第 13 章 Crisis, Climax, Resolution，英文印刷页 303—304，PDF 第 172—173 页
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第13章《危机、高潮和结局》／危机，index_split_033.html P0003—P0012、P0028—P0035；两难定义另见
+      index_split_027.html P0073—P0087
 - capability_id: cap.mckee-story-short-drama.climax-payoff
-  revision: 1
+  revision: 2
   status: active
   slug: climax-payoff
   title: 用高潮行动兑现结尾变化
   importance: high
-  importance_rationale: 覆盖短剧行动因果、开场、递进、场景诊断和结尾的具体任务。
+  importance_rationale: 短剧结构任务需要可执行步骤，源方法段与交付契约已逐项核对。
   intents:
   - 用高潮行动兑现结尾变化
   keywords:
   - climax-payoff
   - 结构
-  one_liner: 高潮行动实现决定性价值变化，写作者可从结尾回查必要的铺垫。
+  - 高潮
+  one_liner: 确定结局后，写出造成最终变化的可见行动，再反查该行动所需的能力、信息和条件是否已建立。每处缺口都补到因果合适的早先场次。
   card: cards/climax-payoff.md
-  also_read: []
+  also_read:
+  - inciting-incident
+  - controlling-idea
+  frontmatter:
+    description: 用户要用高潮行动兑现结尾变化，或在结构阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 结构
+    - 短剧
+    - 麦基
   promotion:
     destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
   source_evidence:
-  - source_id: src-story-part3
-    location: 第 13 章 Crisis, Climax, Resolution，英文印刷页 309—310，PDF 第 178—179 页
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第13章《危机、高潮和结局》／高潮，index_split_033.html P0037—P0050、P0054—P0062；统一性另见
+      index_split_031.html P0003—P0005
+- capability_id: cap.mckee-story-short-drama.story-form
+  revision: 1
+  status: active
+  slug: story-form
+  title: 选择全剧结构并对齐结局承诺
+  importance: medium
+  importance_rationale: 短剧结构任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 选择全剧结构并对齐结局承诺
+  keywords:
+  - story-form
+  - 结构
+  - 故事设计术语；故事三角；变化与静止
+  one_liner: 策划全季时先写清驱动者、主要因果、时间安排与结局开放程度，再检查分集安排是否兑现了这种讲述选择。
+  card: cards/story-form.md
+  also_read:
+  - genre-contract
+  frontmatter:
+    description: 用户要选择全剧结构并对齐结局承诺，或在结构阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 结构
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第2章《结构图谱》／故事设计术语；故事三角；变化与静止，index_split_010.html P0009—P0130
+- capability_id: cap.mckee-story-short-drama.setting-research
+  revision: 1
+  status: active
+  slug: setting-research
+  title: 用背景约束筛查情节可能性
+  importance: medium
+  importance_rationale: 短剧制作任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 用背景约束筛查情节可能性
+  keywords:
+  - setting-research
+  - 制作
+  - 背景；调查研究；创作选择
+  one_liner: 设计重大行动前，先核对时代、故事期限、地点和冲突层面的限制，再把所需专业事实列为已确认或待查。
+  card: cards/setting-research.md
+  also_read:
+  - genre-contract
+  frontmatter:
+    description: 用户要用背景约束筛查情节可能性，或在制作阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 制作
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第3章《结构与背景》／背景；调查研究；创作选择，index_split_012.html P0005—P0064
+- capability_id: cap.mckee-story-short-drama.genre-contract
+  revision: 1
+  status: active
+  slug: genre-contract
+  title: 按类型常规设计观众期待
+  importance: medium
+  importance_rationale: 短剧结构任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 按类型常规设计观众期待
+  keywords:
+  - genre-contract
+  - 结构
+  - 结构和类型的关系；精通类型；创作限制；混合类型
+  one_liner: 确定题材后，先识别本项目承诺给观众的核心体验和必需场面，再设计保留、变化与混合的具体做法。
+  card: cards/genre-contract.md
+  also_read:
+  - story-form
+  frontmatter:
+    description: 用户要按类型常规设计观众期待，或在结构阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 结构
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第4章《结构与类型》／结构和类型的关系；精通类型；创作限制；混合类型，index_split_014.html P0041—P0071、P0086
+- capability_id: cap.mckee-story-short-drama.character-pressure
+  revision: 1
+  status: active
+  slug: character-pressure
+  title: 用压力下的选择建立人物性格
+  importance: medium
+  importance_rationale: 短剧人物任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 用压力下的选择建立人物性格
+  keywords:
+  - character-pressure
+  - 人物
+  - 人物性格揭示；人物弧光，结合第17章人物维与人物设计
+  one_liner: 写主要人物时，为想表达的性格设计一个有真实代价的选择，并记录他在不同关系与压力中显露的矛盾。
+  card: cards/character-pressure.md
+  also_read:
+  - crisis-choice
+  frontmatter:
+    description: 用户要用压力下的选择建立人物性格，或在人物阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 人物
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第5章《结构与人物》／人物性格揭示；人物弧光，结合第17章人物维与人物设计，index_split_016.html P0004—P0041；另见
+      index_split_042.html P0017—P0035
+- capability_id: cap.mckee-story-short-drama.controlling-idea
+  revision: 1
+  status: active
+  slug: controlling-idea
+  title: 从结局回查主控思想
+  importance: medium
+  importance_rationale: 短剧结构任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 从结局回查主控思想
+  keywords:
+  - controlling-idea
+  - 结构
+  - 主控思想；意义和创作过程；思想与反思想；说教倾向
+  one_liner: 结局确定后，用“什么价值变成怎样，因为何种行动或力量”写出主控思想，再回查故事是否让相反的力量获得充分表现。
+  card: cards/controlling-idea.md
+  also_read:
+  - climax-payoff
+  frontmatter:
+    description: 用户要从结局回查主控思想，或在结构阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 结构
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第6章《结构与意义》／主控思想；意义和创作过程；思想与反思想；说教倾向，index_split_018.html P0021—P0055
+- capability_id: cap.mckee-story-short-drama.setup-payoff
+  revision: 1
+  status: active
+  slug: setup-payoff
+  title: 让分晓能回溯到充分伏笔
+  importance: medium
+  importance_rationale: 短剧场景任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 让分晓能回溯到充分伏笔
+  keywords:
+  - setup-payoff
+  - 场景
+  - 伏笔和分晓
+  one_liner: 对每个关键揭露，写出观众事后需要理解的因果，再检查前文是否已让相关线索可见并具有当时的合理用途。
+  card: cards/setup-payoff.md
+  also_read:
+  - audience-information
+  frontmatter:
+    description: 用户要让分晓能回溯到充分伏笔，或在场景阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 场景
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第10章《场景设计》／伏笔和分晓，index_split_027.html P0025—P0046
+- capability_id: cap.mckee-story-short-drama.composition-rhythm
+  revision: 1
+  status: active
+  slug: composition-rhythm
+  title: 按紧张与释放重排分集节奏
+  importance: medium
+  importance_rationale: 短剧分集任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 按紧张与释放重排分集节奏
+  keywords:
+  - composition-rhythm
+  - 分集
+  - 统一性和多样性；进度；节奏和速度；过渡原理
+  one_liner: 节奏拖沓时，分别检查场次长短、内部活动强度和主线压力，再决定删减、合并或调换。
+  card: cards/composition-rhythm.md
+  also_read:
+  - progressive-complications
+  frontmatter:
+    description: 用户要按紧张与释放重排分集节奏，或在分集阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 分集
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第12章《布局谋篇》／统一性和多样性；进度；节奏和速度；过渡原理，index_split_031.html P0001—P0026、P0069—P0080
+- capability_id: cap.mckee-story-short-drama.antagonism-depth
+  revision: 1
+  status: active
+  slug: antagonism-depth
+  title: 让对抗触及核心价值的深层威胁
+  importance: medium
+  importance_rationale: 短剧人物任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 让对抗触及核心价值的深层威胁
+  keywords:
+  - antagonism-depth
+  - 人物
+  - 将故事和人物带到线索的终点
+  one_liner: 主线压力不足时，围绕最重要的价值列出不同层面的威胁，再选择会迫使主角改变行动的一种深化。
+  card: cards/antagonism-depth.md
+  also_read:
+  - character-pressure
+  frontmatter:
+    description: 用户要让对抗触及核心价值的深层威胁，或在人物阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 人物
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第14章《反面人物塑造原理》／将故事和人物带到线索的终点，index_split_036.html P0001—P0020、P0063—P0068
+- capability_id: cap.mckee-story-short-drama.dramatized-exposition
+  revision: 1
+  status: active
+  slug: dramatized-exposition
+  title: 把解说放进眼前行动和冲突
+  importance: medium
+  importance_rationale: 短剧场景任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 把解说放进眼前行动和冲突
+  keywords:
+  - dramatized-exposition
+  - 场景
+  - 展示，不要告诉；使用幕后故事；闪回；画外音解说
+  one_liner: 场景只在交代背景时，逐条检查哪些事实是观众此刻必须知道的，再为保留的信息设计角色说出或展示它的当下理由。
+  card: cards/dramatized-exposition.md
+  also_read:
+  - audience-information
+  frontmatter:
+    description: 用户要把解说放进眼前行动和冲突，或在场景阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 场景
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第15章《解说》／展示，不要告诉；使用幕后故事；闪回；画外音解说，index_split_038.html P0001—P0059
+- capability_id: cap.mckee-story-short-drama.audience-information
+  revision: 1
+  status: active
+  slug: audience-information
+  title: 用知情差选择神秘、悬念或戏剧反讽
+  importance: medium
+  importance_rationale: 短剧分集任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 用知情差选择神秘、悬念或戏剧反讽
+  keywords:
+  - audience-information
+  - 分集
+  - 兴趣问题；神秘、悬念和戏剧反讽；巧合问题
+  one_liner: 设计一段追看动机时，先排清观众与主要人物各知道什么，再明确要让观众追问真相、担心未来，还是看人物走进已知危险。
+  card: cards/audience-information.md
+  also_read:
+  - setup-payoff
+  frontmatter:
+    description: 用户要用知情差选择神秘、悬念或戏剧反讽，或在分集阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 分集
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第16章《问题和解决方法》／兴趣问题；神秘、悬念和戏剧反讽；巧合问题，index_split_040.html P0019—P0052、P0061—P0074、P0084—P0092
+- capability_id: cap.mckee-story-short-drama.screen-action
+  revision: 1
+  status: active
+  slug: screen-action
+  title: 把抽象心理改成可见可听的动作
+  importance: medium
+  importance_rationale: 短剧制作任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 把抽象心理改成可见可听的动作
+  keywords:
+  - screen-action
+  - 制作
+  - 无言的剧本；将电影植入读者的脑海；现在时刻中的生动动作
+  one_liner: 改写场景说明时，为每个抽象心理判断指出画面或声音中的证据，再用具体的人物动作、物件和变化表达。
+  card: cards/screen-action.md
+  also_read:
+  - dramatized-exposition
+  frontmatter:
+    description: 用户要把抽象心理改成可见可听的动作，或在制作阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 制作
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第18章《文本》／无言的剧本；将电影植入读者的脑海；现在时刻中的生动动作，index_split_044.html P0026—P0048
+- capability_id: cap.mckee-story-short-drama.inside-out-workflow
+  revision: 1
+  status: active
+  slug: inside-out-workflow
+  title: 先验证事件再扩成场次与对白
+  importance: medium
+  importance_rationale: 短剧结构任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 先验证事件再扩成场次与对白
+  keywords:
+  - inside-out-workflow
+  - 结构
+  - 从里到外的写作；步骤大纲；处理台本；银幕剧本
+  one_liner: 开展一轮剧本写作时，先用步骤大纲检验事件与结尾，再扩展动作、潜文本和对白。发现结构缺口时回到相应的大纲或场次层修改。
+  card: cards/inside-out-workflow.md
+  also_read:
+  - scene-analysis
+  frontmatter:
+    description: 用户要先验证事件再扩成场次与对白，或在结构阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 结构
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第19章《作家的创造方法》／从里到外的写作；步骤大纲；处理台本；银幕剧本，index_split_046.html P0021—P0045；处理台本另见
+      index_split_046-blocks.txt B0001
+- capability_id: cap.mckee-story-short-drama.adaptation-recreation
+  revision: 1
+  status: active
+  slug: adaptation-recreation
+  title: 把原作事件重建为可拍的改编大纲
+  importance: medium
+  importance_rationale: 短剧改编任务需要可执行步骤，源方法段与交付契约已逐项核对。
+  intents:
+  - 把原作事件重建为可拍的改编大纲
+  keywords:
+  - adaptation-recreation
+  - 改编
+  - 改编问题
+  one_liner: 改编小说为短剧时，先按故事内时间顺序提取事件，再围绕原作核心体验设计可拍的动作与场次，逐项记录删改及其影响。
+  card: cards/adaptation-recreation.md
+  also_read:
+  - screen-action
+  - inside-out-workflow
+  frontmatter:
+    description: 用户要把原作事件重建为可拍的改编大纲，或在改编阶段提出相关问题时使用。输入为当前项目的设定、场次或大纲，按E段确认具体字段。
+    tags:
+    - 改编
+    - 短剧
+    - 麦基
+  promotion:
+    destination: router
+    notes: 按用户每书一个入口的交付要求，将能力置于同书路由中。
+  source_evidence:
+  - source_id: src-story-zh-tj2014
+    version_id: tj-2014-09-8bf058b9180a
+    location: 第16章《问题和解决方法》／改编问题，index_split_040.html P0110—P0133，重点P0126—P0129

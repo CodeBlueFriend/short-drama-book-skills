@@ -1,0 +1,184 @@
+{
+  "framework": {
+    "scope": "对story-form及之后新增卡做来源与机制边界快速复核；未运行卡片任务，不等同V2/V3验证。",
+    "records_seen": 19,
+    "status": "source mechanism generally supported; apply corrections below",
+    "corrections": [
+      {
+        "slug": "setting-research",
+        "severity": "minor",
+        "issue": "标注创作选择但引用止于P0058，核心比较和二次列方案在P0061-P0064。",
+        "recommended_paras": "P0005-P0052；如保留创作选择则加P0053-P0064",
+        "action": "补来源或缩小小节标签。"
+      },
+      {
+        "slug": "antagonism-depth",
+        "severity": "required",
+        "issue": "规则是压力不足时的自诊，但定位P0001-P0048未涵盖作者直接给出的症状→检查→处理机制。",
+        "recommended_paras": "P0001-P0020、P0063-P0068，关键P0066-P0068",
+        "action": "补引P0066-P0068；保留非机械顺序例外，负面之负面是质变，不是简单加暴力。"
+      },
+      {
+        "slug": "dramatized-exposition",
+        "severity": "required",
+        "issue": "闪回与旁白步骤只问新增体验和去重，遗漏原文的关键使用前提。",
+        "recommended_paras": "P0037-P0044；P0052-P0055",
+        "action": "闪回先检查观众已想知道且过去片段有自身启动、进展和转折；旁白先删除检验故事能否成立，若保留需有独特反讽、见识或对照，不用旁白掩盖故事缺口。"
+      },
+      {
+        "slug": "audience-information",
+        "severity": "required",
+        "issue": "引用止于P0038，未覆盖与信息差应用紧邻的虚假神秘边界。",
+        "recommended_paras": "P0019-P0038、P0049-P0052；巧合P0061-P0074",
+        "action": "补检查不得故意扣押理解当前行动所必需且应告知的基本事实；避免信息表很完整却观众无法理解。"
+      },
+      {
+        "slug": "inside-out-workflow",
+        "severity": "required",
+        "issue": "原文P0028明确作者不给听者看步骤大纲，而口述观察实时反应。“或做独立审读”属于短剧工作流的新增替代，不可当作原书同等支持的验证程序。",
+        "recommended_paras": "P0021-P0030、P0031-P0045；补index_split_046-blocks.txt B0001",
+        "action": "优先保留口述验证；独立审读如保留，明确为应用扩展且未验证等效。处理台本阶段写谈论内容和潜文本、暂不精写对白，B0001为直接证据。"
+      },
+      {
+        "slug": "adaptation-recreation",
+        "severity": "minor",
+        "issue": "原文先反复阅读、理解原作精神后才列事件；原作章节位置和删改台账是合理新增审计字段。",
+        "recommended_paras": "P0126-P0129",
+        "action": "步骤前补熟悉原作和世界；所有集数时长与改动说明标短剧改编字段，避免误称原书原生表格。"
+      },
+      {
+        "slug": "screen-action",
+        "severity": "boundary",
+        "issue": "原文主张只写可感知动作；允许内心独白依制作形态保留是应用扩展。",
+        "recommended_paras": "P0026-P0047",
+        "action": "保留时区分处理台本中的内在信息、成片可听独白、不可拍心理说明，不能把纯心理说明算作可拍证据。"
+      }
+    ],
+    "supported_without_material_correction": [
+      "story-form",
+      "genre-contract",
+      "character-pressure",
+      "controlling-idea",
+      "setup-payoff",
+      "composition-rhythm"
+    ],
+    "additional_coverage_notes": [
+      "第12章P0027-P0068社会进展、个人进展、象征升华、反讽升华未在composition-rhythm卡步骤出现；可进入该卡参考或overview，勿只登记整章覆盖。",
+      "第17章P0036-P0040喜剧人物执迷可作为人物卡分支或参考；第16章喜剧设计与戏剧腔、漏洞属于需登记去向的小机制。",
+      "第18章形象系统P0071-P0083、P0108-P0112可为screen-action参考扩展或独立参考；片名P0113-P0117对应genre-contract。",
+      "第16章P0137-P0147漏洞机制可留reference，不能把人物说出漏洞误判为因果问题已经解决。",
+      "所有电影场长、页数、幕数比例不可直接当作短剧硬指标。"
+    ]
+  },
+  "principles": {
+    "review_scope": "release-records.json 18卡，重点前六的中文P定位与原理条件；核对正文、译注与相关blockquote，非压力测试报告",
+    "status": "基本来源成立；两处示例/定位建议修正；新增必要条件宜补进相应卡边界",
+    "first_six": [
+      {
+        "slug": "expectation-gap",
+        "finding": "现P0053—P0066含世界、鸿沟原理，但未覆盖迫使第二行动的完整机制。",
+        "suggested_section": "第一步；鸿沟；关于风险；进展过程中的鸿沟",
+        "suggested_paras": "P0044—P0050、P0059—P0081",
+        "minimal_paras": "P0059—P0067、P0078—P0081",
+        "condition": "预期以人物主观知识和自认最小保守行动为起点；新反应必须改变其世界认识，下一步增加能力/意志/风险。允许暂时成功，非所有拍摄节拍都强制反转。现边界基本容纳后者。"
+      },
+      {
+        "slug": "inciting-incident",
+        "finding": "现范围基本支持失衡、反应与脊椎，但steps的观众预期主要对抗场面不在所引P范围。",
+        "suggested_paras": "P0044—P0057、P0064—P0085、P0086—P0098、P0114—P0124",
+        "condition": "若卡教授必备场面/兑现检查应加P0077—P0085。建议加时机成熟条件：不是先按秒数放，须观众有足够前置信息产生完整反应。主激励事件默认上银幕，但第9章P0111—P0113明确为移情作取舍的特例。"
+      },
+      {
+        "slug": "progressive-complications",
+        "finding": "现P0001—P0013准确。",
+        "suggested_paras": "P0003—P0014；需要多层冲突时加P0031—P0047",
+        "condition": "现卡允许旧策略在新条件下再用，较忠实。不归点不可翻译成每场或每集都物理不可逆；第2章P0059允许场景/序列可逆，完整故事终局层级另论。"
+      },
+      {
+        "slug": "scene-analysis",
+        "finding": "现P0028—P0046含完整五步，准确；更精确P0029—P0045。",
+        "suggested_paras": "P0029—P0045；诊断使用前提另加P0003—P0004",
+        "condition": "行为节拍而非每句对白，潜文本目的而非表面活动，现steps已写好。建议边界补：已经奏效的场景不为套表而改；若使用场景目标属于主线的约束，其来源第10章P0003—P0004，应补引用。"
+      },
+      {
+        "slug": "crisis-choice",
+        "finding": "现P0001—P0012准确。",
+        "suggested_paras": "P0003—P0012；决定呈现和停顿加P0028—P0035；两难定义补第10章P0073—P0087",
+        "condition": "实际两善/两恶按人物视点，不按外部道德评价；各选项不能兼得且分量真实。最后行动应发生于前面手段已耗尽、对抗最集中之处。现步骤的可见决定可由P0032—P0033补足，不能只引危机开篇。"
+      },
+      {
+        "slug": "climax-payoff",
+        "finding": "现P0036—P0049准确支持高潮与逆向改写；positive存在阶段成果当最终高潮的歧义。",
+        "suggested_paras": "P0037—P0050；若教结局余波加P0054—P0062；激励事件与高潮统一补第12章P0003—P0005",
+        "required_example_fix": "positive只写案件进入复核、父子电话，尚不足证明此前全剧核心问题已有决定性结果。应把它明确标阶段演练，或把主线问题限定为主角是否提交会牵连自己的真证；若全剧承诺父亲案真相，则补最终确定事实的行动与不可逆后果。勿虚构具体司法结果作为已核事实。",
+        "condition": "高潮价值达最大负荷并具有决定性/不可逆变化，不靠说明台词解释其意义；可安静可悲剧。现steps第三步承认阶段成果，正确，但需让正例也一致。"
+      }
+    ],
+    "other_cards": [
+      {
+        "slug": "story-form",
+        "finding": "范围支持主要内容；已视觉核验三张图。大情节七项包含内外冲突、连贯性和主动/被动，卡可作为选择清单，不必每项都选一种。非线性并非任意打乱时序的同义词，有闪回仍可线性。开放结局仍须由已展示事件支持有限可推断答案，不是仅登记留白便可通过。补第2章P0085。"
+      },
+      {
+        "slug": "setting-research",
+        "finding": "P0005—P0058基本准确，但若讲替代行动选择及研究终止/循环，应补P0048—P0052与P0062—P0064。研究不是替代事件设计，不能为达到全知而无限调研。"
+      },
+      {
+        "slug": "genre-contract",
+        "finding": "P0041—P0070准确支持常规、研究与混合；边界如说类型不断变化宜补P0071、P0086。类型常规不是抄袭具体表达的许可。"
+      },
+      {
+        "slug": "character-pressure",
+        "finding": "准确；现边界区分揭示与变化良好。第17章P0021维须是连贯矛盾，临时让好人做坏事不能算深度。建议在steps显式检查矛盾是否在既定人物中连贯。"
+      },
+      {
+        "slug": "controlling-idea",
+        "finding": "准确；反思想须与主张拥有相当真理和力量，不能仅摆一个可轻易击败的反对意见；现步骤可补这条质量标准。"
+      },
+      {
+        "slug": "setup-payoff",
+        "finding": "准确，边界基本充分。伏笔初见含义与回溯含义不同、回收后引出新方向可写成检查项。"
+      },
+      {
+        "slug": "composition-rhythm",
+        "finding": "P0001—P0026覆盖主要节奏。过渡原理到P0080，现至P0078漏第7项想法和末段结论，宜写P0069—P0080。若教情感正负交替应补第10章P0050—P0059并保留同向大反差特例；当前卡不硬写交替可维持。"
+      },
+      {
+        "slug": "antagonism-depth",
+        "finding": "已视觉核验首四图，四层名称准确；正义/不公平/非正义/专制与爱/冷漠/恨/自恨是不同价值例。图为关系图，不是数值刻度，也不是每个短剧必须按四站固定顺序升级。现卡适度选择深化较好。若教授典型进展顺序，应补P0067—P0068（该处同时说允许各种顺序）。其余价值图未全核，不可声称图谱全核。"
+      },
+      {
+        "slug": "dramatized-exposition",
+        "finding": "基本准确；现steps把暂时无用信息移至首次需要处，但还须主动建立观众想知道的欲望，并保证不致理解迷惑，见P0010、P0017—P0018。旁白非全禁的边界正确。"
+      },
+      {
+        "slug": "audience-information",
+        "finding": "定位漏最重要公平性限定P0050—P0051，建议加P0019—P0051。现steps未显式检查人为隐瞒/虚假神秘，宜补。若引用巧合禁则，则必须同时列P0074反结构例外及P0087喜剧有两条件的例外。否则可不教巧合规则。"
+      },
+      {
+        "slug": "screen-action",
+        "finding": "来源准确，语言差异边界良好。例中人物是否害怕父亲来电可有其他解释，视觉证据表达犹疑而非诊断唯一内心；改写核对原意时不应宣称观众必然读出同一心理。第18章P0042明喻暗喻可过可拍检验，非一律禁止。"
+      },
+      {
+        "slug": "inside-out-workflow",
+        "finding": "来源与例外准确。关键潜文本操作原P提取遗漏，已在index_split_046-blocks.txt B0001，建议来源字段增补此块；处理本需描述话题和真实思感而非提前全写对白。试讲是反馈工具，不将十分钟/读者沉默当短剧量化通过标准。"
+      }
+    ],
+    "image_checks": {
+      "chapter_2": [
+        "images/00011.jpg",
+        "images/00040.jpg",
+        "images/00012.jpg"
+      ],
+      "chapter_14_partial": [
+        "images/00017.jpg",
+        "images/00033.jpg",
+        "images/00019.jpg",
+        "images/00032.jpg"
+      ],
+      "remaining": "第14章其余12幅价值图尚未逐图核验；章9等幕曲线亦未视觉审计。"
+    },
+    "candidate_file": "/Users/liming/Documents/ChatGPT/蒸馏/books/mckee-story-short-drama/candidates/principles-zh.md"
+  },
+  "resolution": "必要条件及定位已逐条写回能力卡。全图校勘、译本逐字校勘和真人观众测试仍保留缺口。"
+}

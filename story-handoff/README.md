@@ -1,26 +1,17 @@
-# 《故事》短剧写作交接包
+# 《故事》中文版短剧写作交接
 
-六项能力覆盖行动预期与结果、激励事件、递进纠葛、场景分析、危机选择、高潮回收。本包包含一个独立 Codex skill 和六份知识库导入稿，面向短剧剧本写作。
+罗伯特·麦基著，周铁东译，天津人民出版社，2014年9月第1版，ISBN 9787201088334。本版包含一个独立Codex skill和19份知识库导入稿。现有英文六卡已按中文段落复核并升修订，另外补齐背景、类型、人物、主控思想、伏笔、节奏、对抗、解说、信息差、视听表达、创作流程与改编等任务。
 
-本次依据英文原书第三部分的方法段落，覆盖范围和页码见每张卡及来源审核。整书其余章节、中文版本与译本页码待核。操作步骤为短剧改编，演练案例由本项目编写。
+来源为第三方中文EPUB，版本信息通过版权页、CIP和ISBN核对。19章已进行索引扫描和候选段回读。每张卡都有原章、小节和电子文本位置，纸本页码及全文校勘待核。操作步骤与短剧范例为本项目适配。
 
-## 独立调用
+## 交给项目的更新指令
 
-把 skills/mckee-story-short-drama 整个目录放入个人 Codex 技能目录。下一条消息用 `$mckee-story-short-drama` 指定本次要查的场次或大纲。
+> 按现有 mm-write-short-drama 的个人知识库流程，导入 knowledge-inbox 内的资料。先导入为 draft，保留章节、小节、文件段号、源哈希和仓颉能力 ID。核查与当前规则的重复、冲突和适用范围，再启用确认适用的卡。若本库已导入上一版《故事》六张卡，请按相同仓颉能力 ID 做版本映射，归档旧卡并回查正文变化后启用新版。规则正文哈希相同时也须更新版本和来源定位。不要单靠新规则正文哈希去重，以免同一能力修订后双重生效。
 
-## 交给负责更新的智能体
+## 独立使用
 
-将本包解压后交给负责更新的智能体，可使用以下指令。
+把 skills/mckee-story-short-drama 整个目录放入Codex技能目录，按 `$mckee-story-short-drama` 调用。正式写作前读取当前项目的事实、知情状态和时间线，再按任务加载相应卡。
 
-> 按我现有 mm-write-short-drama 的知识库流程，导入 knowledge-inbox 里的六份资料。保留原书章节、英文印刷页码、PDF 页码和短剧改编说明。先建 draft，语义核对与已有卡的重复、冲突和适用范围，再启用适用卡，运行知识库校验及分阶段检索。
+[试写与评测](examples.md) · [译本与来源](EDITION_REQUIREMENT.md) · [源文件清单](source-manifest.json)
 
-也可从本包解压目录使用现有导入器。
-
-```bash
-skill="/Users/liming/.codex/skills/mm-write-short-drama"
-kb="/实际知识库绝对路径"
-python3 "$skill/scripts/ingest_knowledge.py" --kb "$kb" --status draft ./knowledge-inbox
-python3 "$skill/scripts/validate_knowledge.py" --kb "$kb"
-```
-
-[试写与检查](examples.md)
+[独立测试结果](test-results.md) · [覆盖审核](coverage-audit.md)

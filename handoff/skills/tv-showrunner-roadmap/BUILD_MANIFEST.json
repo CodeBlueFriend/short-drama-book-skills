@@ -1,0 +1,31 @@
+{
+  "tool": "cangjie-tools v2.5.0",
+  "published_hashes": {
+    "SKILL.md": "a0b58686f1e9e422805ebb622b0c7ecba9190b08e36c01a37af77e0911f57cc4",
+    "references/capabilities/character-mystery.md": "f12985e0630ea048428bdd23be0f3b18cc09cd5a81fbbdccc7d524516b2cb622",
+    "references/capability-index.md": "4a31caefb2a92ba9c53e0488106c25e090c8dd79f409a21cae096010b3e16253",
+    "references/cheatsheet.md": "725ffca4a017d9f22daff29f204ddf573849c1ae19185cddb32bcbe56624f284",
+    "references/glossary.md": "6b9f936abf508de14c2b173102d8212d3c5bf11a25ff696efb35cf99efc4f2c3",
+    "references/overview.md": "3a79b4abc5343a5513f4bd4bc96ff37faf57d0d7186aec1eef552fe724cbd68f"
+  },
+  "note": "update/重编译前比对 published_hashes；检测到本地手改不得静默覆盖",
+  "bundle_id": "bundle.tv-showrunner-roadmap",
+  "bundle_sha256": "644ecae84b0d38599ee86503cc12ca1caaa19a58b37f345306bd73ff232a0a6f",
+  "variant": "single",
+  "run_id": "run-20261117-230039-f48577",
+  "decision": {
+    "schema_version": 1,
+    "requested": "single",
+    "selected": "single",
+    "decision_policy": "single-first-v1",
+    "skill_budget": 8,
+    "promoted_count": 0,
+    "capability_count": 1,
+    "reasons": [
+      "用户显式选择 single，auto 决策器不覆盖用户选择"
+    ],
+    "alternative": "compact pack（1 个来源路由入口 + 0 个晋级 Skill，共 1 个可发现入口）",
+    "user_confirmed": true,
+    "preserve_strategy_on_update": true
+  }
+}
